@@ -5,13 +5,13 @@ Authors: Recep Bayraktar, Yitao Tang, Mihnea P. Dragomir, Cristina Ivan, Xinxin 
 
 Program used: R version 4.3.2 (2023-10-31)
 
-attached base packages:
+attached base packages: <br />
 [1] stats     graphics  grDevices utils     datasets  methods   base     
 
-other attached packages:
+other attached packages: <br />
 [1] ggpubr_0.6.0  ggprism_1.0.5 ggplot2_3.4.4
 
-loaded via a namespace (and not attached):
+loaded via a namespace (and not attached): <br />
  [1] vctrs_0.6.5      cli_3.6.1        rlang_1.1.2      purrr_1.0.2     
  [5] car_3.1-2        generics_0.1.3   glue_1.6.2       backports_1.4.1 
  [9] colorspace_2.1-0 scales_1.3.0     fansi_1.0.5      grid_4.3.2      
