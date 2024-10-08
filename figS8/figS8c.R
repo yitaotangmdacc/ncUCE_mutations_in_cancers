@@ -13,9 +13,6 @@ data = data[data[,2]!='NotAv',]
 data$x = data$MSI_status
 data[data$POLE_Status_Final=='Mut', 'x'] = 'POLE Mut'
 
-kruskal.test(data[,1] ~ data[,'x'])$p.val
-pairwise.wilcox.test(data[,1], data[, 'x'], p.adj='none')
-
 df_p_val <- data.frame(
          group1 = c("MSI", "MSS", "MSI"), 
          group2 = c("MSS", "POLE Mut", "POLE Mut"), 
@@ -30,7 +27,7 @@ p = ggplot(data, aes(x=factor(x), y=somatic_snv_rate)) +
     theme_classic() + 
     theme(legend.position="none", axis.title=element_text(size=10), axis.text=element_text(size=10)) + 
     add_pvalue(df_p_val, xmin = "group1", xmax = "group2", label = "label", y.position = "y.position", label.size=6) + 
-    scale_x_discrete(breaks=c("MSI", "MSS", "POLE Mut"), labels=c("MSI (n=5)", "MSS (n=68)", "POLE Mut (n=9)"))
+    scale_x_discrete(breaks=c("MSI", "MSS", "POLE Mut"), labels=c("MSI (n=7)", "MSS (n=72)", "POLE Mut (n=3)"))
 
 
 pdf('figS8c.pdf', 3.6, 3.6)
